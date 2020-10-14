@@ -138,3 +138,11 @@
     - yoda-external-user-service
   tags:
     - eus
+
+- name: Provision nss-pam-ldapd to use AD for authentification
+  hosts: icats
+  become: yes
+  roles:
+    - role: nss-pam-ldapd
+  tags:
+    - icat
